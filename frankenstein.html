@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Детальна інформація про книгу Франкенштейн: опис, характеристики та видання.">
+    <title>Франкенштейн — Бібліотека книг</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header id="top">
+    <p><strong>Бібліотека книг</strong></p>
+    <p>Лабораторна робота №3 — таблиці, списки, медіа та навігація в HTML5.</p>
+    <p>Виконав: Аксьонов Ігор, група ІН-43-5.</p>
+
+    <nav aria-label="Основна навігація">
+        <ul>
+            <li><a href="index.html">Каталог</a></li>
+            <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <nav aria-label="Хлібні крихти">
+        <ol>
+            <li><a href="index.html">Каталог</a></li>
+            <li aria-current="page">Франкенштейн</li>
+        </ol>
+    </nav>
+
+    <h1>Франкенштейн</h1>
+
+    <nav aria-label="На цій сторінці">
+        <h2>На цій сторінці</h2>
+        <ul>
+            <li><a href="#description">Опис</a></li>
+            <li><a href="#characteristics">Характеристики</a></li>
+            <li><a href="#editions">Видання</a></li>
+        </ul>
+    </nav>
+
+    <figure>
+        <picture>
+            <source type="image/webp"
+                    srcset="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F3%2F35%2FFrankenstein_1818_edition_title_page.jpg&amp;output=webp&amp;w=900">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Frankenstein_1818_edition_title_page.jpg"
+                 alt="Титульна сторінка першого видання роману Франкенштейн 1818 року"
+                 width="405" height="720"
+                 fetchpriority="high">
+        </picture>
+        <figcaption>Титульна сторінка першого видання роману Франкенштейн 1818 року.</figcaption>
+    </figure>
+
+    <section id="description">
+        <h2>Опис</h2>
+        <p>«<strong>Франкенштейн</strong>» — роман Мері Шеллі, уперше виданий у 1818 році.</p>
+        <p>Молодий учений Віктор Франкенштейн намагається створити живу істоту, але наслідки експерименту виявляються набагато складнішими, ніж він очікував.</p>
+        <p>Твір розглядає питання відповідальності вченого, самотності, упереджень і меж людських амбіцій.</p>
+    </section>
+
+    <section id="characteristics">
+        <h2>Характеристики</h2>
+        <dl>
+            <dt>Автор</dt>
+            <dd>Мері Шеллі</dd>
+
+            <dt>Категорія</dt>
+            <dd>Класика</dd>
+
+            <dt>Кількість сторінок</dt>
+            <dd><data value="280">280 сторінок</data></dd>
+
+            <dt>Дата першого видання</dt>
+            <dd><time datetime="1818-01-01">1818 рік</time></dd>
+
+            <dt>Стан</dt>
+            <dd>Не прочитано</dd>
+        </dl>
+    </section>
+
+    <section id="editions">
+        <h2>Видання</h2>
+        <table>
+            <caption>Порівняння видань книги «Франкенштейн»</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Видання</th>
+                    <th scope="col">Рік</th>
+                    <th scope="col">Кількість сторінок</th>
+                    <th scope="col">Мова</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Перше видання</th>
+                    <td>1818</td>
+                    <td>280</td>
+                    <td>Англійська</td>
+                </tr>
+                <tr>
+                    <th scope="row">Видання 1831 року</th>
+                    <td>1831</td>
+                    <td>288</td>
+                    <td>Англійська</td>
+                </tr>
+                <tr>
+                    <th scope="row">Українське видання</th>
+                    <td>2022</td>
+                    <td>304</td>
+                    <td>Українська</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <p><a href="index.html">Повернутися до каталогу</a></p>
+    <p><a href="#top">Повернутися на початок сторінки</a></p>
+</main>
+
+<footer>
+    <p><a href="admin.html">Адміністрування каталогу</a></p>
+    <address>
+        Автор: Аксьонов Ігор<br>
+        Група: ІН-43-5<br>
+        Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+    </address>
+    <p><small>© 2026 Аксьонов Ігор. Навчальна робота.</small></p>
+</footer>
+</body>
+</html>

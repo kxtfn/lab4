@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Навчальна сторінка адміністрування каталогу книг: таблиця та форма додавання книги.">
+    <title>Адміністрування — Бібліотека книг</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header id="top">
+    <p><strong>Бібліотека книг</strong></p>
+    <p>Лабораторна робота №4 — вебформи та елементи керування.</p>
+    <p>Виконав: Аксьонов Ігор, група ІН-43-5.</p>
+
+    <nav aria-label="Основна навігація">
+        <ul>
+            <li><a href="index.html">Каталог</a></li>
+            <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Адміністрування каталогу</h1>
+    <p>Це навчальна імітація адміністративного інтерфейсу. Сторінка не має серверного захисту.</p>
+
+    <section aria-labelledby="catalog-admin-title">
+        <h2 id="catalog-admin-title">Книги каталогу</h2>
+        <table>
+            <caption>Елементи каталогу</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Назва</th>
+                    <th scope="col">Категорія</th>
+                    <th scope="col">Сторінок</th>
+                    <th scope="col">Наявність</th>
+                    <th scope="col">Дії</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1984</th>
+                    <td>Антиутопія</td>
+                    <td>328</td>
+                    <td>Є</td>
+                    <td><a href="admin-edit.html">Редагувати «1984»</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">Гобіт</th>
+                    <td>Фентезі</td>
+                    <td>310</td>
+                    <td>Є</td>
+                    <td><a href="admin-edit.html">Редагувати «Гобіт»</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">451° за Фаренгейтом</th>
+                    <td>Фантастика</td>
+                    <td>249</td>
+                    <td>Є</td>
+                    <td><a href="admin-edit.html">Редагувати «451° за Фаренгейтом»</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section aria-labelledby="add-title">
+        <h2 id="add-title">Додати книгу</h2>
+
+        <form id="item-form" action="admin.html" method="get" autocomplete="off">
+            <fieldset>
+                <legend>Основні дані</legend>
+
+                <p>
+                    <label for="item-title">Назва книги</label>
+                    <input id="item-title" name="title" type="text"
+                           minlength="2" maxlength="120" required>
+                </p>
+
+                <p>
+                    <label for="item-author">Автор</label>
+                    <input id="item-author" name="author" type="text"
+                           minlength="2" maxlength="100" required>
+                </p>
+
+                <p>
+                    <label for="item-isbn">ISBN</label>
+                    <input id="item-isbn" name="isbn" type="text"
+                           pattern="97[89]-[0-9]-[0-9]{3}-[0-9]{5}-[0-9Xx]"
+                           aria-describedby="item-isbn-hint" required>
+                    <small id="item-isbn-hint">Формат: 978-0-452-28423-4.</small>
+                </p>
+
+                <p>
+                    <label for="item-category">Категорія</label>
+                    <select id="item-category" name="category" required>
+                        <option value="">Оберіть категорію</option>
+                        <option value="dystopia">Антиутопія</option>
+                        <option value="fantasy">Фентезі</option>
+                        <option value="science-fiction">Фантастика</option>
+                        <option value="classic">Класика</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="item-year">Рік видання</label>
+                    <input id="item-year" name="publicationYear" type="number"
+                           min="1450" max="2026" step="1" required>
+                </p>
+
+                <p>
+                    <label for="item-pages">Кількість сторінок</label>
+                    <input id="item-pages" name="pages" type="number"
+                           min="1" max="5000" step="1" required>
+                </p>
+
+                <p>
+                    <label for="item-added">Дата додавання</label>
+                    <input id="item-added" name="addedAt" type="date"
+                           min="2020-01-01" max="2026-12-31" required>
+                </p>
+
+                <p>
+                    <label for="item-cover">Обкладинка</label>
+                    <input id="item-cover" name="coverFile" type="file"
+                           accept="image/png,image/jpeg,image/webp"
+                           aria-describedby="item-cover-hint">
+                    <small id="item-cover-hint">PNG, JPEG або WebP.</small>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Опис і наявність</legend>
+
+                <p>
+                    <label for="item-description">Опис</label>
+                    <textarea id="item-description" name="description"
+                              rows="6" cols="50" maxlength="1000"
+                              aria-describedby="item-description-hint"></textarea>
+                    <small id="item-description-hint">До 1000 символів.</small>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" name="available" value="yes">
+                        Книга є в наявності
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Додати</button>
+                <button type="reset">Очистити</button>
+            </p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p><a href="admin.html" aria-current="page">Адміністрування каталогу</a></p>
+    <address>
+        Автор: Аксьонов Ігор<br>
+        Група: ІН-43-5<br>
+        Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+    </address>
+    <p><small>© 2026 Аксьонов Ігор. Навчальна робота.</small></p>
+</footer>
+</body>
+</html>

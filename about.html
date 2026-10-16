@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Інформація про навчальний проєкт Бібліотека книг, медіа та джерела матеріалів.">
+    <title>Про проєкт — Бібліотека книг</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header id="top">
+    <p><strong>Бібліотека книг</strong></p>
+    <p>Лабораторна робота №3 — таблиці, списки, медіа та навігація в HTML5.</p>
+    <p>Виконав: Аксьонов Ігор, група ІН-43-5.</p>
+
+    <nav aria-label="Основна навігація">
+        <ul>
+            <li><a href="index.html">Каталог</a></li>
+            <li><a href="about.html" aria-current="page">Про проєкт</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Про проєкт</h1>
+    <p>
+        «Бібліотека книг» — навчальний HTML5-каталог із окремими сторінками
+        для кожної книги, таблицями, списками, зображеннями та медіа.
+    </p>
+
+    <section>
+        <h2>Як користуватися каталогом</h2>
+        <ol>
+            <li>Відкрити сторінку каталогу.</li>
+            <li>Знайти потрібну книгу.</li>
+            <li>Натиснути на її назву.</li>
+            <li>Переглянути опис, характеристики та таблицю видань.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Майбутні можливості</h2>
+        <ul>
+            <li>CSS-оформлення сторінок.</li>
+            <li>Пошук за назвою та автором.</li>
+            <li>Фільтрація і сортування.</li>
+            <li>Завантаження даних через API.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Відео</h2>
+        <video controls width="360" height="636" preload="metadata">
+            <source src="https://upload.wikimedia.org/wikipedia/commons/2/20/Biblioteca_Evento.webm"
+                    type="video/webm">
+            <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/2/20/Biblioteca_Evento.webm/Biblioteca_Evento.webm.360p.mp4"
+                    type="video/mp4">
+            <track kind="captions"
+                   src="media/library-uk.vtt"
+                   srclang="uk"
+                   label="Українська"
+                   default>
+            <p>
+                Ваш браузер не підтримує відео.
+                <a href="https://commons.wikimedia.org/wiki/File:Biblioteca_Evento.webm">
+                    Відкрити відео на Wikimedia Commons
+                </a>.
+            </p>
+        </video>
+    </section>
+
+    <section>
+        <h2>Часті запитання</h2>
+
+        <details name="faq">
+            <summary>Для чого створено цей каталог?</summary>
+            <p>Для практичного вивчення семантичних елементів HTML5 і навігації між сторінками.</p>
+        </details>
+
+        <details name="faq">
+            <summary>Чи кожна книга має власну сторінку?</summary>
+            <p>Так. Кожна назва в каталозі відкриває сторінку саме цієї книги.</p>
+        </details>
+
+        <details name="faq">
+            <summary>Чи буде додано пошук і фільтрацію?</summary>
+            <p>Такі можливості можна реалізувати в наступних роботах за допомогою JavaScript.</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Джерела медіаматеріалів</h2>
+        <ul>
+            <li><a href="https://commons.wikimedia.org/wiki/File:1984_first_edition_cover.jpg">1984</a> — Public domain (Wikimedia Commons)</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:The_Hobbit_-_title_page_of_first_American_print.jpg">Гобіт</a> — Public domain (Wikimedia Commons)</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Fahrenheit451HUNcover.jpg">451° за Фаренгейтом</a> — CC BY-SA 3.0 (Wikimedia Commons)</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:National_Museum_of_Ethnology,_Osaka_-_Collection_of_%22Le_Petit_Prince%22_in_many_languages.jpg">Маленький принц</a> — CC BY-SA 3.0 (Wikimedia Commons)</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:PrideAndPrejudiceTitlePage.jpg">Гордість і упередження</a> — Public domain (Wikimedia Commons)</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Frankenstein_1818_edition_title_page.jpg">Франкенштейн</a> — Public domain (Wikimedia Commons)</li>
+            <li><a href="https://commons.wikimedia.org/wiki/File:Biblioteca_Evento.webm">Відео бібліотеки</a> — CC0 1.0.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Навчальний контакт</h2>
+        <address>
+            Аксьонов Ігор, група ІН-43-5<br>
+            Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+        </address>
+    </section>
+
+    <p><a href="#top">Повернутися на початок сторінки</a></p>
+</main>
+
+<footer>
+    <p><a href="admin.html">Адміністрування каталогу</a></p>
+    <address>
+        Автор: Аксьонов Ігор<br>
+        Група: ІН-43-5<br>
+        Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+    </address>
+    <p><small>© 2026 Аксьонов Ігор. Навчальна робота.</small></p>
+</footer>
+</body>
+</html>

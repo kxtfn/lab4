@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Детальна інформація про книгу Маленький принц: опис, характеристики та видання.">
+    <title>Маленький принц — Бібліотека книг</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header id="top">
+    <p><strong>Бібліотека книг</strong></p>
+    <p>Лабораторна робота №3 — таблиці, списки, медіа та навігація в HTML5.</p>
+    <p>Виконав: Аксьонов Ігор, група ІН-43-5.</p>
+
+    <nav aria-label="Основна навігація">
+        <ul>
+            <li><a href="index.html">Каталог</a></li>
+            <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <nav aria-label="Хлібні крихти">
+        <ol>
+            <li><a href="index.html">Каталог</a></li>
+            <li aria-current="page">Маленький принц</li>
+        </ol>
+    </nav>
+
+    <h1>Маленький принц</h1>
+
+    <nav aria-label="На цій сторінці">
+        <h2>На цій сторінці</h2>
+        <ul>
+            <li><a href="#description">Опис</a></li>
+            <li><a href="#characteristics">Характеристики</a></li>
+            <li><a href="#editions">Видання</a></li>
+        </ul>
+    </nav>
+
+    <figure>
+        <picture>
+            <source type="image/webp"
+                    srcset="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb3%2FNational_Museum_of_Ethnology%252C_Osaka_-_Collection_of_%2522Le_Petit_Prince%2522_in_many_languages.jpg&amp;output=webp&amp;w=900">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/National_Museum_of_Ethnology%2C_Osaka_-_Collection_of_%22Le_Petit_Prince%22_in_many_languages.jpg"
+                 alt="Колекція видань Маленького принца різними мовами в музеї"
+                 width="640" height="480"
+                 fetchpriority="high">
+        </picture>
+        <figcaption>Колекція видань Маленького принца різними мовами в музеї.</figcaption>
+    </figure>
+
+    <section id="description">
+        <h2>Опис</h2>
+        <p>«<strong>Маленький принц</strong>» — філософська повість Антуана де Сент-Екзюпері, уперше видана у 1943 році.</p>
+        <p>Головний герой подорожує різними планетами, знайомиться з їх мешканцями та поступово відкриває важливі істини про дружбу, любов і відповідальність.</p>
+        <p>Твір написаний простою мовою, але містить багато символів і тем, які однаково цікаві дітям і дорослим.</p>
+    </section>
+
+    <section id="characteristics">
+        <h2>Характеристики</h2>
+        <dl>
+            <dt>Автор</dt>
+            <dd>Антуан де Сент-Екзюпері</dd>
+
+            <dt>Категорія</dt>
+            <dd>Класика</dd>
+
+            <dt>Кількість сторінок</dt>
+            <dd><data value="96">96 сторінок</data></dd>
+
+            <dt>Дата першого видання</dt>
+            <dd><time datetime="1943-04-06">1943 рік</time></dd>
+
+            <dt>Стан</dt>
+            <dd>Прочитано</dd>
+        </dl>
+    </section>
+
+    <section id="editions">
+        <h2>Видання</h2>
+        <table>
+            <caption>Порівняння видань книги «Маленький принц»</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Видання</th>
+                    <th scope="col">Рік</th>
+                    <th scope="col">Кількість сторінок</th>
+                    <th scope="col">Мова</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Перше видання</th>
+                    <td>1943</td>
+                    <td>96</td>
+                    <td>Французька</td>
+                </tr>
+                <tr>
+                    <th scope="row">Англомовне видання</th>
+                    <td>1943</td>
+                    <td>96</td>
+                    <td>Англійська</td>
+                </tr>
+                <tr>
+                    <th scope="row">Українське видання</th>
+                    <td>2023</td>
+                    <td>112</td>
+                    <td>Українська</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <p><a href="index.html">Повернутися до каталогу</a></p>
+    <p><a href="#top">Повернутися на початок сторінки</a></p>
+</main>
+
+<footer>
+    <p><a href="admin.html">Адміністрування каталогу</a></p>
+    <address>
+        Автор: Аксьонов Ігор<br>
+        Група: ІН-43-5<br>
+        Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+    </address>
+    <p><small>© 2026 Аксьонов Ігор. Навчальна робота.</small></p>
+</footer>
+</body>
+</html>

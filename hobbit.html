@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Детальна інформація про книгу Гобіт: опис, характеристики та видання.">
+    <title>Гобіт — Бібліотека книг</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header id="top">
+    <p><strong>Бібліотека книг</strong></p>
+    <p>Лабораторна робота №3 — таблиці, списки, медіа та навігація в HTML5.</p>
+    <p>Виконав: Аксьонов Ігор, група ІН-43-5.</p>
+
+    <nav aria-label="Основна навігація">
+        <ul>
+            <li><a href="index.html">Каталог</a></li>
+            <li><a href="about.html">Про проєкт</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <nav aria-label="Хлібні крихти">
+        <ol>
+            <li><a href="index.html">Каталог</a></li>
+            <li aria-current="page">Гобіт</li>
+        </ol>
+    </nav>
+
+    <h1>Гобіт</h1>
+
+    <nav aria-label="На цій сторінці">
+        <h2>На цій сторінці</h2>
+        <ul>
+            <li><a href="#description">Опис</a></li>
+            <li><a href="#characteristics">Характеристики</a></li>
+            <li><a href="#editions">Видання</a></li>
+        </ul>
+    </nav>
+
+    <figure>
+        <picture>
+            <source type="image/webp"
+                    srcset="https://wsrv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fe%2Fe7%2FThe_Hobbit_-_title_page_of_first_American_print.jpg&amp;output=webp&amp;w=900">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/The_Hobbit_-_title_page_of_first_American_print.jpg"
+                 alt="Титульна сторінка першого американського видання книги Гобіт"
+                 width="440" height="625"
+                 fetchpriority="high">
+        </picture>
+        <figcaption>Титульна сторінка першого американського видання книги Гобіт.</figcaption>
+    </figure>
+
+    <section id="description">
+        <h2>Опис</h2>
+        <p>«<strong>Гобіт</strong>» — фентезійний роман Дж. Р. Р. Толкіна, опублікований у 1937 році.</p>
+        <p>Головний герой Більбо Торбин вирушає у подорож разом із загоном гномів, щоб допомогти їм повернути скарби та батьківщину.</p>
+        <p>Твір поєднує пригоди, гумор, казкові мотиви та поступове дорослішання головного героя.</p>
+    </section>
+
+    <section id="characteristics">
+        <h2>Характеристики</h2>
+        <dl>
+            <dt>Автор</dt>
+            <dd>Дж. Р. Р. Толкін</dd>
+
+            <dt>Категорія</dt>
+            <dd>Фентезі</dd>
+
+            <dt>Кількість сторінок</dt>
+            <dd><data value="310">310 сторінок</data></dd>
+
+            <dt>Дата першого видання</dt>
+            <dd><time datetime="1937-09-21">1937 рік</time></dd>
+
+            <dt>Стан</dt>
+            <dd>Прочитано</dd>
+        </dl>
+    </section>
+
+    <section id="editions">
+        <h2>Видання</h2>
+        <table>
+            <caption>Порівняння видань книги «Гобіт»</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Видання</th>
+                    <th scope="col">Рік</th>
+                    <th scope="col">Кількість сторінок</th>
+                    <th scope="col">Мова</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Перше британське видання</th>
+                    <td>1937</td>
+                    <td>310</td>
+                    <td>Англійська</td>
+                </tr>
+                <tr>
+                    <th scope="row">Американське видання</th>
+                    <td>1938</td>
+                    <td>310</td>
+                    <td>Англійська</td>
+                </tr>
+                <tr>
+                    <th scope="row">Українське видання</th>
+                    <td>2022</td>
+                    <td>320</td>
+                    <td>Українська</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <p><a href="index.html">Повернутися до каталогу</a></p>
+    <p><a href="#top">Повернутися на початок сторінки</a></p>
+</main>
+
+<footer>
+    <p><a href="admin.html">Адміністрування каталогу</a></p>
+    <address>
+        Автор: Аксьонов Ігор<br>
+        Група: ІН-43-5<br>
+        Email: <a href="mailto:evildadaya@gmail.com">evildadaya@gmail.com</a>
+    </address>
+    <p><small>© 2026 Аксьонов Ігор. Навчальна робота.</small></p>
+</footer>
+</body>
+</html>
